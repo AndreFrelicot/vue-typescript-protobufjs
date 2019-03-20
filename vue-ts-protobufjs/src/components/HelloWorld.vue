@@ -33,6 +33,12 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
+import * as awesome from "../../awesome.js";
+
+console.log(awesome.awesomepackage)
+let myMsg = awesome.awesomepackage.AwesomeMessage.create();
+
+
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
